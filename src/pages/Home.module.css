@@ -1,11 +1,3 @@
-:root {
-  --animation-delay-base: .7s;
-}
-
-.App {
-  text-align: center;
-}
-
 .first, .second, .third, .fourth, .fifth, .sixth {
   opacity: 0;
 }
