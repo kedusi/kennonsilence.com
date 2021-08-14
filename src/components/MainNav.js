@@ -1,15 +1,23 @@
-import { Fragment } from "react";
-import { Link } from "react-router-dom";
-import { sitemap } from "../sitemap";
+import { sitemap } from '../sitemap';
+import Button from '../ui/Button';
+import classes from './MainNav.module.css';
 
 const MainNav = () => {
-    const navLinks = sitemap.reduce((prev, curr) => 
-        curr.inNav ? prev.concat(<Link to={curr.url}>{curr.pageName}</Link>) : prev
-    , []);
+	const navLinks = sitemap.reduce(
+		(prev, curr) =>
+			curr.inNav
+				? prev.concat(
+						<Button
+							link={curr.url}
+							label={curr.pageName}
+							color='#00f'
+						/>
+				  )
+				: prev,
+		[]
+	);
 
-    return <Fragment>
-        {navLinks}
-    </Fragment>
+	return <nav className={classes.nav}>{navLinks}</nav>;
 };
 
 export default MainNav;

@@ -1,0 +1,12 @@
+.nav {
+    display: flex;
+    justify-content: space-around;
+    justify-items: center;
+    margin: 1vh;
+}
+
+.nav * {
+    cursor: pointer;
+    width: 90%;
+    text-align: center;
+}
