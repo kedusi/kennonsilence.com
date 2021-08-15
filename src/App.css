@@ -1,52 +1,14 @@
 :root {
-  --animation-delay-base: .7s;
+  --green: #094;
+  --yellow: #490;
+  --blue: #049;
+  --red: #904;
+  --purple: #409;
+  --orange: #940;
+  --black: #004;
+  --white: #999;
 }
 
 .App {
   text-align: center;
-}
-
-.first, .second, .third, .fourth, .fifth, .sixth {
-  opacity: 0;
-}
-
-.first.animate,
-.second.animate,
-.third.animate,
-.fourth.animate,
-.fifth.animate {
-  animation: fadeIn-slideRight 1s;
-  animation-fill-mode: forwards;
-}
-
-.sixth.animate {
-  animation: fadeIn-slideRight 3s;
-  animation-fill-mode: forwards;
-}
-
-.seventh.animate {
-  animation: fadeOut-slideRight 1s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes fadeIn-slideRight {
-  0% {
-    opacity: 0;
-    transform: translateX(-10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-
-@keyframes fadeOut-slideRight {
-  from {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-  to {
-    opacity: 0;
-    transform: translateX(10px);
-  }
 }
